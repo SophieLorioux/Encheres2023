@@ -16,6 +16,8 @@ import java.time.LocalDateTime;
 
 /**
  * Entité représentant un article
+ *
+ * @author mdelage2021
  */
 @Getter
 @Setter

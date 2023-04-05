@@ -1,12 +1,19 @@
 package fr.eni.encheres.bo;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
+/**
+ * Entité representant un Utilisateur
+ *
+ * @Autor Jérémy
+ */
 @Getter
 @Setter
+@AllArgsConstructor
 @Table(name="utilisateur")
 public class Utilisateurs {
 
@@ -51,20 +58,6 @@ public class Utilisateurs {
     @Column(name="compteActif")
     private boolean compteActif;
 
-    public Utilisateurs(String pseudo, String nom, String prenom, String email, String rue, String codePostale,
-                       String ville, String motDePasse, int credit, boolean administrateur) {
-
-        this.pseudo = pseudo;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.email = email;
-        this.rue = rue;
-        this.codePostale = codePostale;
-        this.ville = ville;
-        this.motDePasse = motDePasse;
-        this.credit = credit;
-        this.administrateur = administrateur;
-    }
 }
 
 

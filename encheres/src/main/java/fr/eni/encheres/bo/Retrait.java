@@ -10,6 +10,8 @@ import javax.persistence.Column;
 
 /**
  * Entité représentant un retrait
+ *
+ * @author mdelage2021
  */
 @Getter
 @Setter

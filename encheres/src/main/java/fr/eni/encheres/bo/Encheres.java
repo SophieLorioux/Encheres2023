@@ -1,18 +1,25 @@
 package fr.eni.encheres.bo;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * Entité representant une enchère
+ *
+ * @author  Jérémy
+ */
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
 public class Encheres {
 
     @Column(name="date_enchere",nullable = false)
-    private LocalDateTime dateEnchère;
+    private LocalDateTime dateEnchere;
 
     @Column(name="montant_enchere",nullable = false)
     private int montantEnchere;
@@ -27,15 +34,5 @@ public class Encheres {
     @JoinColumn(name="no_article", nullable = false)
     private Articles article;
 
-    public Encheres() {
-
-    }
-
-    public Encheres(LocalDateTime dateEnchère, int montantEnchere, Utilisateurs utilisateur, Articles article) {
-        this.dateEnchère = dateEnchère;
-        this.montantEnchere = montantEnchere;
-        this.utilisateur = utilisateur;
-        this.article = article;
-    }
 }
 
