@@ -35,7 +35,7 @@ public class Utilisateurs {
     @Column(name="email",nullable = false)
     private String email;
 
-    @Column(name="telephone",nullable = true)
+    @Column(name="telephone")
     private String telephone;
 
     @Column(name="rue",nullable = false)
