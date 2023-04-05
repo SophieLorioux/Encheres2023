@@ -1,7 +1,5 @@
 package fr.eni.encheres.bo;
 
-import fr.eni.encheres.bo.Categories;
-import fr.eni.encheres.bo.Utilisateurs;
 import fr.eni.encheres.bo.enumenation.Etat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

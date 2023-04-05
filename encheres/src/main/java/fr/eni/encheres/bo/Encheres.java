@@ -4,7 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
 import java.time.LocalDateTime;
 
 /**
@@ -14,7 +17,6 @@ import java.time.LocalDateTime;
  */
 @Getter
 @Setter
-@Entity
 @AllArgsConstructor
 public class Encheres {
 
